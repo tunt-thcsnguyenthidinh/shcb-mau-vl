@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BC CĐ Quý IV/2026 — CB Trường THCS Văn Lương</title>
+<style>
+:root{--red:#da251d;--red2:#ee3224;--dark:#b30f0a;--gold:#d4a017;--gold2:#f5c542;--gold-light:#fff3c4;--cream:#fffaf0;--paper:#fffdf8;--ink:#221a15;--muted:#6b5e52;--line:#e8dcc3;--green:#1e7a34;--shadow:0 10px 30px rgba(218,37,29,.16)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:clip}body{overflow-x:clip;max-width:100%;margin:0;font-family:"Times New Roman",Times,serif;background:var(--cream);color:var(--ink);font-size:18px;line-height:1.55}
+a{color:inherit}
+/* TOP STRIP */
+.gov-strip{background:linear-gradient(90deg,var(--dark),var(--red2),var(--dark));color:#ffe9a8;text-align:center;padding:7px 12px;font-family:Arial,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+/* HERO */
+.hero{background:radial-gradient(900px 400px at 15% -10%,rgba(245,197,66,.35),transparent 60%),linear-gradient(135deg,#b30f0a,#da251d 45%,#ee3224);color:#fff;padding:26px 18px 0;position:relative;overflow:hidden}
+.hero::after{content:"★";position:absolute;right:-30px;top:-70px;font-size:300px;color:rgba(245,197,66,.12);line-height:1}
+.hero-inner{max-width:1180px;margin:0 auto;position:relative;z-index:1}
+.doc-head{display:flex;justify-content:space-between;gap:20px;border-bottom:2px solid rgba(245,197,66,.7);padding-bottom:14px;font-size:16px}
+.doc-head .left{text-align:center;line-height:1.35}.doc-head .right{text-align:center;line-height:1.35}
+.doc-head b{text-transform:uppercase}.doc-head .party{font-weight:700;letter-spacing:.04em}
+.star-badge{width:86px;height:86px;margin:22px auto 8px;border:3px solid var(--gold2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:46px;color:var(--gold2);background:rgba(0,0,0,.18);box-shadow:0 0 0 6px rgba(245,197,66,.15)}
+.hero h2{text-align:center;margin:4px 0;font-family:Arial,sans-serif;letter-spacing:.22em;font-size:14px;color:#ffe9a8;text-transform:uppercase}
+.hero h1{text-align:center;margin:6px auto 8px;max-width:920px;font-size:clamp(26px,4.6vw,44px);line-height:1.2;font-weight:700}
+.hero .subtitle{text-align:center;color:#ffeec2;font-size:clamp(16px,2.4vw,21px);max-width:860px;margin:0 auto}
+.hero .meta{text-align:center;margin:14px auto 0;font-size:16px;color:#fff}
+.hero .meta b{color:var(--gold2)}
+/* STATS */
+.stats{max-width:1180px;margin:20px auto 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:0 0 22px}
+.stat{background:rgba(255,255,255,.97);color:var(--ink);border-radius:14px;padding:14px 10px;text-align:center;border-top:4px solid var(--gold);box-shadow:var(--shadow)}
+.stat .num{font-family:Arial,sans-serif;font-size:30px;font-weight:800;color:var(--red)}
+.stat .lbl{font-family:Arial,sans-serif;font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+/* TOOLBAR */
+.toolbar{position:sticky;top:0;z-index:50;background:#fffdf6;border-bottom:2px solid var(--gold);box-shadow:0 4px 14px rgba(0,0,0,.06)}
+.toolbar-inner{max-width:1180px;margin:0 auto;display:flex;gap:8px;align-items:center;padding:9px 14px;flex-wrap:wrap}
+.toolbar button,.toolbar input{font-family:Arial,sans-serif;font-size:13.5px;border:1.5px solid var(--red);border-radius:999px;padding:8px 14px;background:#fff;color:var(--red);cursor:pointer;font-weight:700}
+.toolbar button.primary{background:var(--red);color:#fff}
+.toolbar button:hover{background:var(--gold-light)}
+.toolbar button.primary:hover{background:var(--dark)}
+.toolbar input{border-color:#cbbd93;color:var(--ink);font-weight:400;flex:1;min-width:150px;cursor:text}
+.toolbar .spacer{flex:1}
+/* LAYOUT */
+.layout{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:22px;padding:22px 14px 10px}
+.toc{position:sticky;top:64px;align-self:start;background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--red);border-radius:12px;padding:14px;box-shadow:var(--shadow)}
+.toc h3{font-family:Arial,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:2px 0 10px}
+.toc a{display:block;padding:8px 10px;border-radius:8px;text-decoration:none;font-size:15.5px;border-left:3px solid transparent}
+.toc a:hover,.toc a.active{background:#fdf0d3;border-left-color:var(--gold);color:var(--dark);font-weight:700}
+.toc .prog{height:8px;background:#eee2c4;border-radius:99px;margin-top:12px;overflow:hidden}
+.toc .prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--red2));transition:width .3s}
+.toc .prog-lbl{font-family:Arial,sans-serif;font-size:12px;color:var(--muted);margin-top:5px}
+main{min-width:0}
+section.slide{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:26px 28px;margin-bottom:22px;box-shadow:var(--shadow);max-width:100%;overflow:clip}
+.kicker{font-family:Arial,sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:800}
+section h2{margin:6px 0 8px;font-size:clamp(22px,3vw,30px);color:var(--dark);line-height:1.25}
+section h3{color:var(--red);margin:18px 0 6px;font-size:20px}
+section p{margin:8px 0;text-align:justify}
+.lead{font-size:19px;background:#fdf6dd;border-left:5px solid var(--gold);padding:12px 16px;border-radius:0 10px 10px 0}
+ul{margin:6px 0 6px 4px;padding-left:22px}li{margin:5px 0;text-align:justify}
+.callout{background:#fdecec;border:1.5px dashed var(--red2);border-radius:12px;padding:13px 16px;margin:14px 0}
+.callout b{color:var(--red)}
+.note{background:#eef7ee;border-left:5px solid var(--green);padding:11px 15px;border-radius:0 10px 10px 0;margin:12px 0}
+/* CARDS */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:14px 0}
+.cards.c4{grid-template-columns:repeat(4,minmax(0,1fr))}.cards.c3{grid-template-columns:repeat(3,minmax(0,1fr))}.card{min-width:0}
+.card{border:1.5px solid var(--line);border-radius:14px;padding:16px;background:#fff;cursor:pointer;transition:.2s}
+.card:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:var(--shadow)}
+.card .ic{font-size:28px}.card h4{margin:6px 0 4px;font-family:Arial,sans-serif;font-size:16.5px;color:var(--dark)}
+.card p{font-size:15.5px;color:#4a3f35;text-align:left;margin:0}
+.card .more{display:none;margin-top:8px;font-size:15px;color:var(--ink)}
+.card.open .more{display:block}
+.card.open{border-color:var(--red);background:#fff8e6}
+.badge{display:inline-block;font-family:Arial,sans-serif;font-size:11.5px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--red);color:#fff}
+.badge.gold{background:var(--gold);color:#3d2c00}.badge.green{background:var(--green)}
+/* TIMELINE */
+.timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:18px 0 6px;position:relative}
+.timeline::before{content:"";position:absolute;top:21px;left:6%;right:6%;height:3px;background:linear-gradient(90deg,var(--gold),var(--red2))}
+.tl{position:relative;text-align:center;padding:0 8px}
+.tl .dot{width:44px;height:44px;margin:0 auto;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:19px;border:3px solid var(--gold2);position:relative;z-index:1}
+.tl b{display:block;margin-top:8px;font-family:Arial,sans-serif;font-size:14.5px;color:var(--dark)}
+.tl span{font-size:14.5px;color:var(--muted)}
+.tl.urgent .dot{background:var(--red2);animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(238,50,36,.45)}70%{box-shadow:0 0 0 12px rgba(238,50,36,0)}100%{box-shadow:0 0 0 0 rgba(238,50,36,0)}}
+/* LEGAL */
+details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0;background:#fff}
+summary{cursor:pointer;font-weight:700;color:var(--dark)}
+details p{font-size:16px}
+/* TABLE */
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:16px}
+th{background:var(--red);color:#fff;font-family:Arial,sans-serif;font-size:14px;padding:10px;text-align:left}
+td{border:1px solid var(--line);padding:9px 10px;vertical-align:top}
+tr:nth-child(even) td{background:#fdf8ec}
+/* TASKS */
+.task{border:1.5px solid var(--line);border-radius:14px;margin:12px 0;background:#fff;overflow:hidden}
+.task-head{display:flex;gap:12px;align-items:flex-start;padding:15px 16px;cursor:pointer}
+.task-num{flex:0 0 42px;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;font-weight:800;font-size:19px}
+.task-head h4{margin:2px 0 3px;font-size:19px;color:var(--dark)}
+.task-head .who{font-family:Arial,sans-serif;font-size:13px;color:var(--muted)}
+.task-body{display:none;padding:0 16px 15px 70px}
+.task.open .task-body{display:block}
+.task .chev{margin-left:auto;font-size:20px;color:var(--red)}
+/* DISCUSS / VOTE - manual entry, giơ thẻ Đảng */
+textarea{width:100%;border:1.5px solid #cbbd93;border-radius:10px;padding:11px;font-family:inherit;font-size:16px;min-height:84px;background:#fff}
+.vote-intro{background:#fdecec;border:1.5px solid #f3b3ae;border-radius:12px;padding:12px 16px;margin:12px 0;font-size:16px}
+.vote-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0;width:100%}
+.vote-field{border:1.5px solid var(--line);border-radius:14px;padding:13px 15px;background:#fff;min-width:0;max-width:100%;box-shadow:0 3px 10px rgba(218,37,29,.05)}.vote-grid .vote-field:nth-child(3){border-top:4px solid var(--green)}.vote-grid .vote-field:nth-child(4){border-top:4px solid var(--red2)}.vote-grid .vote-field:nth-child(5){border-top:4px solid var(--gold)}
+.vote-field.main{border:2px solid var(--red);background:#fff5f4}
+.vote-field label{display:block;overflow-wrap:break-word;font-family:Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--dark);margin-bottom:8px}
+.vote-stepper{display:flex;align-items:center;gap:8px;width:100%;min-width:0}
+.vote-stepper button{width:42px;height:46px;flex:0 0 42px;font-size:22px;font-weight:800;font-family:Arial,sans-serif;border:1.5px solid var(--red);background:#fff;color:var(--red);border-radius:10px;cursor:pointer;line-height:1}
+.vote-stepper button:hover{background:var(--gold-light)}
+.vote-stepper input{flex:1 1 0%;width:100%;min-width:0;height:46px;-moz-appearance:textfield;appearance:textfield}.vote-stepper input::-webkit-outer-spin-button,.vote-stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}text-align:center;font-family:Arial,sans-serif;font-size:26px;font-weight:800;color:var(--red);border:1.5px solid #cbbd93;border-radius:10px;background:#fffdf6}
+.vote-field .hint{font-family:Arial,sans-serif;font-size:12.5px;color:var(--muted);margin-top:6px}
+.vote-bar{max-width:100%;height:20px;border-radius:99px;background:#f0e3c8;overflow:hidden;display:flex;margin:14px 0 6px}
+.vote-bar i{display:block;height:100%;transition:width .3s}
+.vote-bar .by{background:var(--green)}.vote-bar .bn{background:var(--red2)}.vote-bar .bo{background:#c9a227}
+.vote-legend{font-family:Arial,sans-serif;font-size:13px;color:var(--muted);display:flex;gap:16px;flex-wrap:wrap}
+.vote-result{border-radius:12px;padding:14px 16px;margin:14px 0;font-size:17px;background:#eef7ee;border-left:5px solid var(--green)}
+.vote-result.err{background:#fdecec;border-left-color:var(--red2)}
+.vote-result.wait{background:#fdf6dd;border-left-color:var(--gold)}
+.vote-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}
+.vote-actions button{font-family:Arial,sans-serif;font-size:13.5px;font-weight:700;border:1.5px solid var(--red);background:#fff;color:var(--red);border-radius:999px;padding:9px 16px;cursor:pointer}
+.vote-actions button.primary{background:var(--red);color:#fff}
+.vote-actions button:hover{background:var(--gold-light)}
+.vote-actions button.primary:hover{background:var(--dark)}
+@media(max-width:900px){.vote-grid{grid-template-columns:minmax(0,1fr)}}
+/* SIGN */
+.sign{display:flex;justify-content:space-between;gap:24px;margin-top:16px;flex-wrap:wrap}
+.sign .col{flex:1;min-width:230px;font-size:16px}
+.sign .col.r{text-align:center}
+.sign .name{font-weight:700;font-size:19px;margin-top:52px}
+/* FOOTER */
+footer{background:linear-gradient(135deg,#b30f0a,#da251d);color:#ffeec2;text-align:center;padding:26px 16px;font-size:15.5px}
+footer b{color:var(--gold2)}
+/* PRESENT MODE */
+body.present{background:#7d0a06}
+body.present .toolbar,body.present .toc,body.present footer,body.present .gov-strip{display:none}
+body.present .layout{grid-template-columns:minmax(0,1fr);max-width:1020px;padding-top:14px}
+body.present section.slide{display:none;min-height:82vh}
+body.present section.slide.current{display:block}
+.present-nav{display:none}
+body.present .present-nav{display:flex;position:fixed;bottom:16px;left:50%;transform:translateX(-50%);gap:10px;z-index:99;background:rgba(0,0,0,.75);padding:9px 14px;border-radius:999px}
+.present-nav button{font-family:Arial,sans-serif;font-weight:700;border:1.5px solid var(--gold2);background:transparent;color:#ffe9a8;border-radius:999px;padding:8px 18px;cursor:pointer}
+.present-nav span{color:#fff;font-family:Arial,sans-serif;font-size:13px;align-self:center}
+mark{background:#ffe066;padding:0 2px}
+@media(max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.toc{position:static}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.cards,.cards.c3,.cards.c4{grid-template-columns:minmax(0,1fr)}.timeline{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.timeline::before{display:none}.doc-head{flex-direction:column;gap:4px}.vote{grid-template-columns:1fr}}
+@media print{.toolbar,.toc,.present-nav,.vote,.no-print{display:none!important}body{background:#fff;font-size:14px}.layout{grid-template-columns:minmax(0,1fr)}section.slide{box-shadow:none;break-inside:avoid}.hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<div class="gov-strip">Đảng Cộng sản Việt Nam quang vinh muôn năm</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="doc-head">
+      <div class="left">ĐẢNG ỦY XÃ LONG ĐIỀN<br><b>CHI BỘ TRƯỜNG THCS VĂN LƯƠNG</b><br>*</div>
+      <div class="right"><span class="party">ĐẢNG CỘNG SẢN VIỆT NAM</span><br><i>Long Điền, ngày 07 tháng 11 năm 2026</i></div>
+    </div>
+    <div class="star-badge">★</div>
+    <h2>Báo cáo chuyên đề &nbsp;•&nbsp; Sinh hoạt chi bộ Quý IV — 2026</h2>
+    <h1>Chuyển đổi số và AI an toàn, có trách nhiệm<br>Từ dữ liệu sạch đến lớp học số</h1>
+    <p class="subtitle">Chi bộ Trường THCS Văn Lương — Sinh hoạt chuyên đề mẫu theo Kế hoạch số 193-KH/ĐU ngày 19/10/2026 của Ban Thường vụ Đảng ủy xã</p>
+    <p class="meta">Người báo cáo: <b>đồng chí Phan Văn Trung</b> — Giáo viên Tin học &nbsp;|&nbsp; Thực hiện Kế hoạch số 01-KH/CB ngày 28/01/2026 của Chi bộ</p>
+    <div class="stats">
+      <div class="stat"><div class="num" data-count="39">0</div><div class="lbl">Đảng viên chi bộ</div></div>
+      <div class="stat"><div class="num" data-count="1010">0</div><div class="lbl">Học sinh toàn trường</div></div>
+      <div class="stat"><div class="num" data-count="24">0</div><div class="lbl">Lớp học</div></div>
+      <div class="stat"><div class="num" data-count="55">0</div><div class="lbl">Viên chức</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar no-print">
+  <div class="toolbar-inner">
+    <button class="primary" id="btnPresent">▶ Trình chiếu báo cáo</button>
+    <button id="btnFull">⛶ Toàn màn hình</button>
+    <button id="btnMinus">A−</button><button id="btnPlus">A+</button>
+    <button id="btnPrint">🖨 In báo cáo</button>
+    <input id="searchBox" type="search" placeholder="🔎 Tìm trong báo cáo… (vd: học bạ số, 20/11, bảo mật)">
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="toc no-print">
+    <h3>Nội dung báo cáo</h3>
+    <a href="#mo-dau">Phần mở đầu</a>
+    <a href="#can-cu">I. Sự cần thiết và căn cứ</a>
+    <a href="#thuc-trang">II. Thực trạng</a>
+    <a href="#trach-nhiem">III. Vai trò, trách nhiệm</a>
+    <a href="#nhiem-vu">IV. Nhiệm vụ, giải pháp</a>
+    <a href="#to-chuc">V. Tổ chức thực hiện</a>
+    <a href="#ket-luan">Kết luận và đề xuất</a>
+    <a href="#thao-luan">Thảo luận — Biểu quyết</a>
+    <div class="prog"><i id="progBar"></i></div>
+    <div class="prog-lbl" id="progLbl">Đã đọc 0%</div>
+  </nav>
+
+  <main id="main">
+  <!-- MO DAU -->
+  <section class="slide" id="mo-dau" data-title="Phần mở đầu">
+    <div class="kicker">Phần I • Mở đầu</div>
+    <h2>Mở đầu</h2>
+    <p class="lead">Thực hiện Kế hoạch số 01-KH/CB ngày 28/01/2026 của Chi bộ Trường THCS Văn Lương về tổ chức sinh hoạt chuyên đề quý IV năm 2026; Hướng dẫn số 42-HD/BTCTW ngày 28/10/2025 của Ban Tổ chức Trung ương; Kế hoạch số 193-KH/ĐU ngày 19/10/2026 của Ban Thường vụ Đảng ủy xã về tổ chức sinh hoạt chi bộ thường kỳ và sinh hoạt chuyên đề mẫu.</p>
+    <h3>1. Lý do chọn chuyên đề</h3>
+    <p>Chuyển đổi số là nhiệm vụ trọng tâm, thường xuyên của năm học 2026–2027, phải được kiểm đếm bằng sản phẩm, kết quả và tác động cụ thể. Dữ liệu là nền tảng của mọi hoạt động quản lý, dạy học, kiểm tra, đánh giá. AI đang thâm nhập trực tiếp vào soạn giảng, chấm chữa, đánh giá và học tập của học sinh — đòi hỏi phải được dùng <b>an toàn, có kiểm soát, có trách nhiệm</b>.</p>
+    <div class="callout">⏰ <b>Các mốc đang rất cấp bách:</b> làm sạch dữ liệu <b>90% trước 20/11/2026</b> và <b>98% đến 25/11/2026</b>; dữ liệu Học bạ số lớp 9 trước <b>31/01/2027</b>; số hóa, ký số từ <b>tháng 12/2026</b>.</div>
+    <h3>2. Mục đích, yêu cầu</h3>
+    <ul>
+      <li><b>Mục đích:</b> quán triệt, thảo luận và thống nhất nhận thức, hành động của toàn chi bộ (39 đảng viên) trong chuyển đổi số và ứng dụng AI an toàn, có trách nhiệm — từ dữ liệu “đúng, đủ, sạch, sống” đến lớp học số; làm rõ trách nhiệm của từng người; thông qua nghị quyết chuyên đề với chỉ tiêu, thời hạn và người phụ trách cụ thể.</li>
+      <li><b>Yêu cầu:</b> 100% đảng viên nghiên cứu dự thảo trên Sổ tay đảng viên điện tử trước ngày 06/11/2026, tham gia thảo luận, liên hệ thực tiễn với nhiệm vụ được phân công — <b>nói thẳng, nói thật, không hình thức</b>.</li>
+    </ul>
+    <h3>3. Phạm vi báo cáo</h3>
+    <p>Toàn bộ hoạt động chuyển đổi số và ứng dụng AI của Trường THCS Văn Lương (1.010 học sinh, 24 lớp, 55 viên chức), tập trung vào <b>ba nội dung</b>:</p>
+    <div class="cards c3">
+      <div class="card"><div class="ic">🗂️</div><h4>1 — Làm sạch dữ liệu</h4><p>Phục vụ Học bạ số.</p></div>
+      <div class="card"><div class="ic">🤖</div><h4>2 — Tiết dạy AI có kiểm soát</h4><p>Tập huấn và tiết dạy ứng dụng AI trong học kỳ I.</p></div>
+      <div class="card"><div class="ic">🔐</div><h4>3 — Bảo mật dữ liệu</h4><p>Bảo vệ dữ liệu cá nhân của học sinh.</p></div>
+    </div>
+  </section>
+
+  <!-- CAN CU -->
+  <section class="slide" id="can-cu" data-title="I. Sự cần thiết và căn cứ">
+    <div class="kicker">Phần II • Nội dung chính</div>
+    <h2>I. Sự cần thiết và căn cứ</h2>
+    <p class="lead">Chuyển đổi số trong trường học <b>không phải</b> là mua thêm máy móc hay dùng thêm phần mềm. Đó là cách làm việc mới: thông tin được nhập <b>một lần</b> vào <b>một hệ thống dùng chung</b>; lãnh đạo nhìn vào dữ liệu để điều hành thay cho báo cáo giấy; giáo viên dùng học liệu số và AI để soạn giảng, chấm chữa, đánh giá. Dữ liệu chuẩn thì mọi việc nhanh và chính xác — dữ liệu sai, lệch thì mọi việc phía sau đều sai theo.</p>
+    <h3>“Dữ liệu đúng, đủ, sạch, sống” — nhấn vào từng ô để xem ví dụ</h3>
+    <div class="cards c4">
+      <div class="card" onclick="this.classList.toggle('open')"><div class="ic">✔️</div><h4>ĐÚNG</h4><p>Thông tin khớp với thực tế.</p><p class="more">Tên, ngày sinh, lớp của học sinh không sai.</p></div>
+      <div class="card" onclick="this.classList.toggle('open')"><div class="ic">🧩</div><h4>ĐỦ</h4><p>Không thiếu trường thông tin nào theo yêu cầu.</p><p class="more">Thiếu ngày sinh, thiếu thông tin liên hệ là dữ liệu chưa đủ.</p></div>
+      <div class="card" onclick="this.classList.toggle('open')"><div class="ic">✨</div><h4>SẠCH</h4><p>Không trùng lặp, không gõ sai dấu, không mỗi nơi một kiểu.</p><p class="more">Ví dụ lỗi chưa sạch: tên gõ sai dấu; một học sinh có hai hồ sơ trùng nhau; chuyển lớp nhưng dữ liệu lớp cũ chưa sửa.</p></div>
+      <div class="card" onclick="this.classList.toggle('open')"><div class="ic">🔄</div><h4>SỐNG</h4><p>Được cập nhật khi thực tế thay đổi.</p><p class="more">Học sinh chuyển lớp, chuyển trường thì dữ liệu phải chuyển theo.</p></div>
+    </div>
+    <h3>AI an toàn, có trách nhiệm — ba nguyên tắc</h3>
+    <div class="cards c3">
+      <div class="card"><span class="badge">Nguyên tắc 1</span><h4>AI hỗ trợ — không thay thế giáo viên</h4><p>AI gợi ý giáo án, bài tập, cách chấm; giáo viên phải đọc lại, chọn lọc, chỉnh sửa rồi mới dùng và <b>chịu trách nhiệm</b> về nội dung dạy, điểm số mình cho.</p></div>
+      <div class="card"><span class="badge">Nguyên tắc 2</span><h4>Không đưa dữ liệu học sinh lên công cụ công cộng</h4><p>Tuyệt đối không nhập tên, ảnh, bài làm, điểm số, thông tin định danh của học sinh vào các trang AI công cộng — đưa lên rồi thì <b>không thu hồi được</b>.</p></div>
+      <div class="card"><span class="badge">Nguyên tắc 3</span><h4>Dạy học sinh biết kiểm chứng</h4><p>Học sinh được dùng AI để tìm hiểu, gợi ý nhưng phải tự kiểm tra lại — <b>không chép nguyên đáp án</b> của AI.</p></div>
+    </div>
+    <div class="note"><b>Học bạ số</b> là hồ sơ học tập điện tử thay cho học bạ giấy: điểm số, nhận xét được nhập, đối chiếu trên hệ thống, sau đó Hiệu trưởng ký số và phát hành. Muốn ký số được thì dữ liệu phải sạch trước — vì vậy mốc làm sạch dữ liệu (tháng 11/2026) phải xong <b>trước</b> mốc Học bạ số (tháng 01/2027). <b>“Lớp học số”</b> là lớp học mà giáo viên dùng học liệu số và AI có kiểm soát; học sinh dùng AI để khám phá và kiểm chứng, không phải để chép đáp án.</div>
+    <h3>Căn cứ thực hiện — nhấn để mở</h3>
+    <details><summary>Nghị quyết 57-NQ/TW và văn bản của Bộ GD&amp;ĐT</summary><p>Nghị quyết số 57-NQ/TW ngày 22/12/2024 của Bộ Chính trị về đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số. Công văn số 6020/BGDĐT-KHCNTT tháng 9/2026 (thực hiện Chỉ thị số 31/CT-TTg ngày 05/8/2026): chuyển đổi số là nhiệm vụ trọng tâm, thường xuyên, kiểm đếm bằng sản phẩm, kết quả và tác động cụ thể; dữ liệu “đúng, đủ, sạch, sống, thống nhất, dùng chung”; AI an toàn, có kiểm soát, có trách nhiệm.</p></details>
+    <details><summary>Khung AI và nhiệm vụ năm học 2026–2027</summary><p>Khung nội dung giáo dục trí tuệ nhân tạo cho học sinh phổ thông (Quyết định số 2422/QĐ-BGDĐT tháng 8/2026, áp dụng từ năm học 2026–2027). Nhiệm vụ năm học 2026–2027 (Quyết định số 2623/QĐ-BGDĐT): môi trường giáo dục an toàn, lành mạnh, kỷ cương; tăng cường giáo dục đạo đức, kỹ năng sống, năng lực số cho học sinh.</p></details>
+    <details><summary>Văn bản của Đảng ủy xã và kế hoạch Học bạ số</summary><p>Kế hoạch số 06-KH/BCĐ ngày 06/3/2026 của Ban chỉ đạo phát triển khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số và Đề án 06 về Kế hoạch triển khai thực hiện nhiệm vụ về phát triển khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số và Đề án 06 năm 2026; Công văn số 2274-CV/ĐU ngày 17/10/2026: làm sạch dữ liệu 90% trước 20/11/2026, 98% đến 25/11/2026; Bí thư chi bộ chịu trách nhiệm trực tiếp. Kế hoạch hoàn thiện dữ liệu Học bạ số: lớp 9 trước 31/01/2027, các lớp còn lại trước 31/3/2027; số hóa, ký số từ tháng 12/2026.</p></details>
+    <details><summary>Vai trò tiên phong của đảng viên</summary><p>Chỉ thị số 07-CT/TW ngày 13/7/2026 và Nghị quyết số 24-NQ/TW ngày 22/8/2026 về phát huy vai trò tiên phong, gương mẫu của đảng viên.</p></details>
+  </section>
+
+  <!-- THUC TRANG -->
+  <section class="slide" id="thuc-trang" data-title="II. Thực trạng">
+    <div class="kicker">Phần II • Nội dung chính</div>
+    <h2>II. Thực trạng</h2>
+    <h3>1. Tình hình chung</h3>
+    <p>Chuyển đổi số đã chuyển từ triển khai phần mềm sang yêu cầu <b>hiệu quả thực chất</b>: dữ liệu phải chuẩn hóa, liên thông, dùng chung; AI từ công cụ hỗ trợ thành nội dung giáo dục có định hướng; giáo viên phải khai thác học liệu số, dữ liệu và AI cho chuyên môn; cán bộ quản lý phải dùng dữ liệu làm công cụ điều hành. Điểm nghẽn chung của các nhà trường vẫn là hạ tầng, thiết bị chưa đồng đều và dữ liệu thiếu chuẩn hóa.</p>
+    <h3>2. Tại Trường THCS Văn Lương</h3>
+    <p>Ngày 17/10/2026, cán bộ quản lý và giáo viên đã được <b>tập huấn AI, công nghệ thông tin</b> — đội ngũ đã bắt đầu làm quen với công cụ, chưa phải đã dùng thành thạo hằng ngày. Nhà trường đang làm sạch dữ liệu theo Công văn số 2274-CV/ĐU: giáo viên chủ nhiệm đối chiếu danh sách lớp mình với thực tế, sửa lỗi, bổ sung chỗ thiếu; đồng chí Trung hỗ trợ kỹ thuật; Tổ Toán – Tin học chỉ đạo lồng ghép kỹ năng số vào tiết học. Hạ tầng, đường truyền, thiết bị do giáo viên Tin học phụ trách.</p>
+    <h3>3. Năm hạn chế cần khắc phục</h3>
+    <div class="cards">
+      <div class="card"><span class="badge gold">Hạn chế 1</span><h4>Dữ liệu chưa sạch xong</h4><p>Các mốc 20/11 và 25/11/2026 còn ở phía trước — Học bạ số chưa có nền để làm.</p></div>
+      <div class="card"><span class="badge gold">Hạn chế 2</span><h4>AI mới dừng ở bước tập huấn</h4><p>Giáo viên mới nghe, mới thử — chưa thành việc làm hằng ngày trong tiết dạy.</p></div>
+      <div class="card"><span class="badge gold">Hạn chế 3</span><h4>Thiết bị chưa đều giữa các lớp</h4><p>Có lớp thuận lợi hơn lớp khác khi dạy học số.</p></div>
+      <div class="card"><span class="badge gold">Hạn chế 4</span><h4>Quy tắc dùng AI an toàn chưa đồng đều</h4><p>Chưa phải ai cũng nắm vững như nhau.</p></div>
+      <div class="card" style="grid-column:1/-1"><span class="badge">Hạn chế 5 — Nguy cơ cao</span><h4>Nguy cơ lộ dữ liệu học sinh</h4><p>Vẫn còn nếu ai đó vô ý nhập thông tin học sinh lên công cụ công cộng chưa rà soát.</p></div>
+    </div>
+  </section>
+
+  <!-- TRACH NHIEM -->
+  <section class="slide" id="trach-nhiem" data-title="III. Vai trò, trách nhiệm">
+    <div class="kicker">Phần II • Nội dung chính</div>
+    <h2>III. Vai trò, trách nhiệm của đảng viên, giáo viên</h2>
+    <table>
+      <tr><th style="width:34%">Người / bộ phận</th><th>Trách nhiệm</th></tr>
+      <tr><td><b>Chi ủy — Bí thư chi bộ</b></td><td>Chi ủy lãnh đạo toàn diện. Bí thư chi bộ <b>chịu trách nhiệm trực tiếp</b> về kết quả thực hiện nghị quyết chuyên đề, trước hết là tiến độ làm sạch dữ liệu và Học bạ số.</td></tr>
+      <tr><td><b>Đ/c Bùi Thanh Liêm</b><br><span style="color:#6b5e52">Chi ủy viên, phụ trách chuyển đổi số</span></td><td>Tham mưu, theo dõi, đôn đốc toàn bộ nội dung chuyển đổi số và AI của chi bộ.</td></tr>
+      <tr><td><b>Đ/c Phan Văn Trung</b><br><span style="color:#6b5e52">Giáo viên Tin học</span></td><td>Phụ trách hạ tầng, Học bạ số, kỹ thuật và hỗ trợ kỹ thuật cho các lớp.</td></tr>
+      <tr><td><b>Đ/c Nguyễn Thị Kim Chi</b><br><span style="color:#6b5e52">Tổ trưởng Tổ Toán – Tin học</span></td><td>Chỉ đạo giáo viên bộ môn lồng ghép kỹ năng số, kỹ năng AI an toàn vào tiết học chính khóa.</td></tr>
+      <tr><td><b>Giáo viên chủ nhiệm</b></td><td>Rà soát, làm sạch dữ liệu của lớp mình; hướng dẫn học sinh sử dụng AI an toàn, có trách nhiệm; không đưa dữ liệu, bài làm, điểm số của học sinh lên công cụ công cộng chưa được rà soát.</td></tr>
+      <tr><td><b>Tổ Văn phòng — Văn thư</b></td><td>Quản lý, lưu trữ hồ sơ số; bảo đảm dữ liệu tạo lập một lần, sử dụng nhiều lần; không trùng lặp hồ sơ giấy và hồ sơ điện tử.</td></tr>
+      <tr><td><b>Mọi đảng viên</b></td><td>Tiên phong học và dùng công nghệ; không hình thức trong chuyển đổi số; không ỷ lại vào AI, luôn kiểm chứng thông tin và chịu trách nhiệm chuyên môn; bảo vệ dữ liệu cá nhân của học sinh.</td></tr>
+    </table>
+  </section>
+
+  <!-- NHIEM VU -->
+  <section class="slide" id="nhiem-vu" data-title="IV. Nhiệm vụ, giải pháp">
+    <div class="kicker">Phần II • Nội dung chính — Trọng tâm</div>
+    <h2>IV. Nhiệm vụ, giải pháp đến hết học kỳ I năm học 2026–2027</h2>
+    <h3>Lộ trình các mốc bắt buộc</h3>
+    <div class="timeline">
+      <div class="tl urgent"><div class="dot">90%</div><b>Trước 20/11/2026</b><span>Làm sạch dữ liệu đạt 90%</span></div>
+      <div class="tl urgent"><div class="dot">98%</div><b>Đến 25/11/2026</b><span>Làm sạch dữ liệu đạt 98%</span></div>
+      <div class="tl"><div class="dot">✍️</div><b>Tháng 12/2026</b><span>Bắt đầu số hóa, ký số Học bạ số; chi bộ đánh giá nghị quyết</span></div>
+      <div class="tl"><div class="dot">🎓</div><b>31/01/2027</b><span>Học bạ số lớp 9 hoàn thành (các lớp còn lại: 31/3/2027)</span></div>
+    </div>
+    <p style="font-family:Arial,sans-serif;font-size:13.5px;color:#6b5e52">Nhấn vào từng nhiệm vụ để mở chi tiết cách làm, người phụ trách và thời hạn.</p>
+
+    <div class="task open"><div class="task-head" onclick="this.parentElement.classList.toggle('open')"><div class="task-num">1</div><div><h4>Làm sạch dữ liệu</h4><div class="who">GVCN thực hiện • Đ/c Trung hỗ trợ kỹ thuật • Đ/c Liêm đôn đốc &nbsp; <span class="badge">90% — 20/11/2026</span> <span class="badge">98% — 25/11/2026</span></div></div><div class="chev">⌄</div></div>
+    <div class="task-body"><ul><li>Giáo viên chủ nhiệm đối chiếu từng học sinh trong lớp mình với thực tế (tên, ngày sinh, lớp), sửa lỗi, bổ sung chỗ thiếu.</li><li>Đồng chí Trung hỗ trợ kỹ thuật khi gặp vướng mắc.</li><li>Đồng chí Liêm đôn đốc, <b>công khai tiến độ từng tổ hằng tuần</b>.</li></ul><div class="callout">❓ <b>Vì sao phải làm trước:</b> dữ liệu sai thì Học bạ số in ra cũng sai, Hiệu trưởng không thể ký số phát hành được.</div></div></div>
+
+    <div class="task"><div class="task-head" onclick="this.parentElement.classList.toggle('open')"><div class="task-num">2</div><div><h4>Học bạ số</h4><div class="who">Đ/c Trung phụ trách &nbsp; <span class="badge gold">Lớp 9 — 31/01/2027</span> <span class="badge gold">Lớp còn lại — 31/3/2027</span></div></div><div class="chev">⌄</div></div>
+    <div class="task-body"><ul><li>Nhập, đối chiếu điểm và thông tin của học sinh lớp 9.</li><li>Từ tháng 12/2026 bắt đầu ký số, phát hành, đồng bộ.</li><li><b>Kết quả:</b> mỗi học sinh có một hồ sơ học tập điện tử thống nhất, thay cho học bạ giấy.</li></ul></div></div>
+
+    <div class="task"><div class="task-head" onclick="this.parentElement.classList.toggle('open')"><div class="task-num">3</div><div><h4>Tập huấn và tiết dạy AI</h4><div class="who">Đ/c Liêm, Đ/c Trung &nbsp; <span class="badge green">Xong trong học kỳ I</span></div></div><div class="chev">⌄</div></div>
+    <div class="task-body"><ul><li>Tập huấn cho <b>100% giáo viên</b> về ba quy tắc dùng AI an toàn ở Phần I.</li><li>Sau tập huấn, <b>06 tổ chuyên môn — mỗi tổ ít nhất 01 tiết dạy</b> hoặc hoạt động có dùng AI nhưng giáo viên kiểm soát toàn bộ: AI gợi ý, giáo viên chọn lọc, chỉnh sửa rồi mới dạy; học sinh được hướng dẫn kiểm chứng, không chép nguyên đáp án.</li></ul></div></div>
+
+    <div class="task"><div class="task-head" onclick="this.parentElement.classList.toggle('open')"><div class="task-num">4</div><div><h4>Bảo mật dữ liệu học sinh</h4><div class="who">Đ/c Trung, giáo viên chủ nhiệm &nbsp; <span class="badge">Thường xuyên</span></div></div><div class="chev">⌄</div></div>
+    <div class="task-body"><p>Chỉ dùng công cụ, tài khoản nhà trường đã rà soát; <b>tuyệt đối không</b> nhập tên, ảnh, bài làm, điểm số, thông tin định danh của học sinh vào công cụ AI công cộng trên mạng.</p><div class="callout">❓ <b>Vì sao:</b> dữ liệu học sinh đưa lên mạng rồi thì không thu hồi được, ảnh hưởng trực tiếp đến quyền của trẻ em.</div></div></div>
+
+    <div class="task"><div class="task-head" onclick="this.parentElement.classList.toggle('open')"><div class="task-num">5</div><div><h4>Theo dõi hằng tháng</h4><div class="who">Đ/c Liêm báo cáo Chi ủy &nbsp; <span class="badge gold">Hằng tháng</span></div></div><div class="chev">⌄</div></div>
+    <div class="task-body"><p>Hằng tháng, Chi ủy nghe báo cáo tiến độ chuyển đổi số — việc nào xong, việc nào chậm, vướng ở đâu để tháo gỡ — rồi báo cáo chi bộ.</p></div></div>
+
+    <div class="task"><div class="task-head" onclick="this.parentElement.classList.toggle('open')"><div class="task-num">6</div><div><h4>Tổng kết</h4><div class="who">Chi ủy &nbsp; <span class="badge gold">Sinh hoạt tháng 12/2026</span></div></div><div class="chev">⌄</div></div>
+    <div class="task-body"><p>Trong kỳ sinh hoạt tháng 12/2026, chi bộ đánh giá kết quả thực hiện nghị quyết chuyên đề: việc nào đạt, việc nào chưa đạt, trách nhiệm thuộc về ai, sang học kỳ II làm tiếp cái gì.</p></div></div>
+  </section>
+
+  <!-- TO CHUC + KET LUAN -->
+  <section class="slide" id="to-chuc" data-title="V. Tổ chức thực hiện">
+    <div class="kicker">Phần II • Nội dung chính</div>
+    <h2>V. Tổ chức thực hiện</h2>
+    <p class="lead">Chi ủy phân công, theo dõi, đôn đốc thực hiện. Kết quả thực hiện nghị quyết chuyên đề được đánh giá trong kỳ sinh hoạt <b>tháng 12/2026</b>.</p>
+    <div class="callout">⚠️ Đảng viên <b>không hoàn thành nhiệm vụ</b> được phân công phải <b>kiểm điểm, làm rõ trách nhiệm</b> trước chi bộ.</div>
+  </section>
+
+  <section class="slide" id="ket-luan" data-title="Kết luận và đề xuất">
+    <div class="kicker">Phần III • Kết luận</div>
+    <h2>Kết luận và đề xuất trình chi bộ thảo luận, quyết định</h2>
+    <ul>
+      <li>Đề nghị chi bộ <b>thảo luận, đóng góp ý kiến</b> hoàn thiện dự thảo và <b>thông qua nghị quyết chuyên đề quý IV năm 2026</b>.</li>
+      <li>Đề nghị Chi ủy <b>theo dõi, đôn đốc hằng tháng</b> và đánh giá kết quả tại kỳ sinh hoạt tháng 12/2026.</li>
+      <li>Đề nghị <b>06 tổ chuyên môn</b> đăng ký tiết dạy ứng dụng AI có kiểm soát trong học kỳ I.</li>
+      <li>Đề nghị <b>giáo viên chủ nhiệm</b> rà soát dữ liệu lớp trước mốc <b>20/11/2026</b>.</li>
+    </ul>
+    <p><i>Trên đây là báo cáo chuyên đề, đề nghị các đồng chí thảo luận, đóng góp ý kiến hoàn thiện./.</i></p>
+  </section>
+
+  <!-- THAO LUAN -->
+  <section class="slide no-print" id="thao-luan" data-title="Thảo luận — Biểu quyết">
+    <div class="kicker">Phần IV • Tại buổi sinh hoạt</div>
+    <h2>Thảo luận và biểu quyết thông qua nghị quyết</h2>
+    <h3>Câu hỏi gợi ý thảo luận</h3>
+    <ul>
+      <li>Lớp/tổ của đồng chí còn dạng lỗi dữ liệu nào nhiều nhất? Cần hỗ trợ gì để kịp mốc 20/11 và 25/11/2026?</li>
+      <li>Tổ chuyên môn của đồng chí đăng ký tiết dạy ứng dụng AI nào trong học kỳ I? Ai kiểm soát nội dung trước khi dạy?</li>
+      <li>Có tình huống nào giáo viên/học sinh có nguy cơ đưa dữ liệu học sinh lên công cụ công cộng không? Cách nhắc nhở, kiểm tra thế nào?</li>
+    </ul>
+    <h3>Ghi ý kiến thảo luận (tự lưu trên máy này)</h3>
+    <textarea id="notes" placeholder="Ghi nhanh ý kiến của các đồng chí trong buổi sinh hoạt…"></textarea>
+    <p style="font-family:Arial,sans-serif;font-size:13px;color:#6b5e52">Ý kiến được lưu tự động trong trình duyệt của máy đang trình chiếu, không gửi đi đâu. Có thể in kèm bằng nút In báo cáo sau khi tắt chế độ trình chiếu.</p>
+    <h3>Biểu quyết thông qua nghị quyết chuyên đề — giơ thẻ Đảng</h3>
+    <div class="vote-intro">🪪 Đảng viên biểu quyết bằng hình thức <b>giơ thẻ Đảng</b>. Ban kiểm phiếu đếm số thẻ giơ lên và <b>nhập số liệu thủ công</b> vào các ô dưới đây — kết quả, tỉ lệ phần trăm và câu kết luận ghi biên bản được tính tự động ngay khi nhập.</div>
+    <div class="vote-grid">
+      <div class="vote-field"><label>Tổng số đảng viên của chi bộ</label>
+        <div class="vote-stepper"><button type="button" onclick="stepVote('vTotal',-1)">−</button><input type="number" id="vTotal" min="0" value="39" inputmode="numeric"><button type="button" onclick="stepVote('vTotal',1)">+</button></div>
+        <div class="hint">Số đảng viên theo danh sách chi bộ.</div></div>
+      <div class="vote-field main"><label>Số đảng viên có mặt tại buổi sinh hoạt</label>
+        <div class="vote-stepper"><button type="button" onclick="stepVote('vPresent',-1)">−</button><input type="number" id="vPresent" min="0" placeholder="0" inputmode="numeric"><button type="button" onclick="stepVote('vPresent',1)">+</button></div>
+        <div class="hint">Chỉ đảng viên có mặt mới giơ thẻ biểu quyết. Số vắng mặt được tự tính.</div></div>
+      <div class="vote-field main"><label>✓ Tán thành</label>
+        <div class="vote-stepper"><button type="button" onclick="stepVote('vYes',-1)">−</button><input type="number" id="vYes" min="0" placeholder="0" inputmode="numeric"><button type="button" onclick="stepVote('vYes',1)">+</button></div>
+        <div class="hint">Đếm số thẻ Đảng giơ lên tán thành dự thảo nghị quyết.</div></div>
+      <div class="vote-field"><label>✗ Không tán thành</label>
+        <div class="vote-stepper"><button type="button" onclick="stepVote('vNo',-1)">−</button><input type="number" id="vNo" min="0" placeholder="0" inputmode="numeric"><button type="button" onclick="stepVote('vNo',1)">+</button></div>
+        <div class="hint">Đếm số thẻ Đảng giơ lên không tán thành.</div></div>
+      <div class="vote-field"><label>? Ý kiến khác</label>
+        <div class="vote-stepper"><button type="button" onclick="stepVote('vOther',-1)">−</button><input type="number" id="vOther" min="0" placeholder="0" inputmode="numeric"><button type="button" onclick="stepVote('vOther',1)">+</button></div>
+        <div class="hint">Đảng viên có mặt nhưng có ý kiến khác / chưa biểu quyết ở hai lượt trên.</div></div>
+      <div class="vote-field"><label>Số đảng viên vắng mặt (tự tính)</label>
+        <div class="vote-stepper"><input type="number" id="vAbsent" readonly tabindex="-1" style="color:#6b5e52"></div>
+        <div class="hint">= Tổng số đảng viên − Số có mặt. Ghi rõ họ tên, lý do vắng vào biên bản.</div></div>
+    </div>
+    <div class="vote-bar"><i class="by" id="barYes" style="width:0%"></i><i class="bn" id="barNo" style="width:0%"></i><i class="bo" id="barOther" style="width:0%"></i></div>
+    <div class="vote-legend"><span>🟩 Tán thành</span><span>🟥 Không tán thành</span><span>🟨 Ý kiến khác</span><span id="voteRemain">Chưa nhập số liệu biểu quyết.</span></div>
+    <div class="vote-result wait" id="voteResult">Nhập số đảng viên có mặt và kết quả đếm thẻ ở các ô trên để xem kết luận biểu quyết.</div>
+    <div class="vote-actions">
+      <button type="button" class="primary" onclick="copyVote()">📋 Sao chép kết quả để dán vào biên bản</button>
+      <button type="button" onclick="resetVote()">↺ Nhập lại từ đầu</button>
+    </div>
+    <p style="font-family:Arial,sans-serif;font-size:13px;color:#6b5e52">Số liệu biểu quyết tự lưu trên máy đang trình chiếu; bấm “Nhập lại từ đầu” để xóa và đếm lại. Kết luận thông qua căn cứ tỉ lệ tán thành trên số đảng viên có mặt (quá 1/2).</p>
+  </section>
+  </main>
+</div>
+
+<div class="present-nav">
+  <button id="pPrev">← Trước</button><span id="pInfo">1 / 8</span><button id="pNext">Tiếp →</button><button id="pExit">✕ Thoát (Esc)</button>
+</div>
+
+<footer>
+  <b>CHI BỘ TRƯỜNG THCS VĂN LƯƠNG</b> — Đảng ủy xã Long Điền<br>
+  Báo cáo chuyên đề Quý IV năm 2026: “Chuyển đổi số và AI an toàn, có trách nhiệm — Từ dữ liệu sạch đến lớp học số”<br>
+  <span style="font-size:15.5px;opacity:.85">Thiết kế và xây dựng webapp bởi Bí thư Chi bộ Lê Trần Mộng Thành</span>
+</footer>
+
+<script>
+const slides=[...document.querySelectorAll('section.slide')];
+let cur=0,fontSize=18;
+// counters
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const el=e.target,end=+el.dataset.count;let s=0;const t=setInterval(()=>{s+=Math.ceil(end/40);if(s>=end){s=end;clearInterval(t)}el.textContent=s.toLocaleString('vi-VN')},25);io.unobserve(el)}})},{threshold:.4});
+document.querySelectorAll('[data-count]').forEach(el=>io.observe(el));
+// progress + toc active
+const links=[...document.querySelectorAll('.toc a')];
+addEventListener('scroll',()=>{const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('progBar').style.width=p+'%';document.getElementById('progLbl').textContent='Đã đọc '+Math.round(p)+'%';
+let id='mo-dau';slides.forEach(s=>{if(s.getBoundingClientRect().top<160)id=s.id});links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id));},{passive:true});
+// font size
+document.getElementById('btnPlus').onclick=()=>{fontSize=Math.min(24,fontSize+1);document.body.style.fontSize=fontSize+'px'};
+document.getElementById('btnMinus').onclick=()=>{fontSize=Math.max(15,fontSize-1);document.body.style.fontSize=fontSize+'px'};
+document.getElementById('btnPrint').onclick=()=>window.print();
+document.getElementById('btnFull').onclick=()=>{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()};
+// search
+document.getElementById('searchBox').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();slides.forEach(s=>{s.style.outline='';});if(q.length<2)return;const hit=slides.find(s=>s.textContent.toLowerCase().includes(q));if(hit){hit.scrollIntoView({behavior:'smooth'});hit.style.outline='3px solid #f5c542';setTimeout(()=>hit.style.outline='',2500)}});
+// present mode
+function show(i){cur=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,j)=>s.classList.toggle('current',j===cur));document.getElementById('pInfo').textContent=(cur+1)+' / '+slides.length+' — '+slides[cur].dataset.title;window.scrollTo(0,0)}
+document.getElementById('btnPresent').onclick=()=>{document.body.classList.add('present');show(0);document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen().catch(()=>{})};
+function exitPresent(){document.body.classList.remove('present');slides.forEach(s=>s.classList.remove('current'));if(document.fullscreenElement)document.exitFullscreen()}
+document.getElementById('pExit').onclick=exitPresent;
+document.getElementById('pNext').onclick=()=>show(cur+1);
+document.getElementById('pPrev').onclick=()=>show(cur-1);
+addEventListener('keydown',e=>{if(!document.body.classList.contains('present'))return;if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();show(cur+1)}if(e.key==='ArrowLeft')show(cur-1);if(e.key==='Escape')exitPresent()});
+// notes
+const notes=document.getElementById('notes');notes.value=localStorage.getItem('vl_notes')||'';notes.addEventListener('input',()=>localStorage.setItem('vl_notes',notes.value));
+// vote - manual entry (giơ thẻ Đảng)
+const vIds=['vTotal','vPresent','vYes','vNo','vOther'];
+function vNum(id){const v=parseInt(document.getElementById(id).value,10);return isNaN(v)||v<0?0:v}
+function stepVote(id,d){const el=document.getElementById(id);const cur=parseInt(el.value,10);el.value=Math.max(0,(isNaN(cur)?0:cur)+d);renderVote()}
+function pct(n,d){return d>0?Math.round(n/d*1000)/10:0}
+let voteSentence='';
+function renderVote(){
+  const total=vNum('vTotal'),present=vNum('vPresent'),yes=vNum('vYes'),no=vNum('vNo'),other=vNum('vOther');
+  document.getElementById('vAbsent').value=Math.max(0,total-present);
+  const box=document.getElementById('voteResult'),remain=document.getElementById('voteRemain');
+  const base=present>0?present:1;
+  document.getElementById('barYes').style.width=(yes/base*100)+'%';
+  document.getElementById('barNo').style.width=(no/base*100)+'%';
+  document.getElementById('barOther').style.width=(other/base*100)+'%';
+  const counted=yes+no+other;
+  localStorage.setItem('vl_vote',JSON.stringify({total,present,yes,no,other}));
+  if(present<=0){box.className='vote-result wait';box.textContent='Nhập số đảng viên có mặt và kết quả đếm thẻ ở các ô trên để xem kết luận biểu quyết.';remain.textContent='Chưa nhập số liệu biểu quyết.';voteSentence='';return}
+  if(present>total){box.className='vote-result err';box.innerHTML='⚠️ <b>Số liệu chưa khớp:</b> số đảng viên có mặt ('+present+') đang lớn hơn tổng số đảng viên của chi bộ ('+total+'). Ban kiểm phiếu kiểm tra lại trước khi công bố.';remain.textContent='Cần kiểm tra lại số có mặt.';voteSentence='';return}
+  if(counted>present){box.className='vote-result err';box.innerHTML='⚠️ <b>Số liệu chưa khớp:</b> tổng số đã đếm thẻ ('+counted+') đang lớn hơn số đảng viên có mặt ('+present+'). Ban kiểm phiếu đếm lại trước khi công bố.';remain.textContent='Đã đếm '+counted+' / '+present+' đảng viên có mặt — vượt quá số có mặt.';voteSentence='';return}
+  remain.textContent='Đã đếm '+counted+' / '+present+' đảng viên có mặt'+(counted<present?' — còn '+(present-counted)+' đồng chí chưa được đếm, kiểm tra lại trước khi chốt.':' — đủ số có mặt.');
+  if(counted<present){box.className='vote-result wait';box.innerHTML='Đang đếm: đã ghi nhận <b>'+counted+'</b> trong số <b>'+present+'</b> đảng viên có mặt. Tán thành tạm tính: <b>'+yes+'</b> ('+pct(yes,present)+'% số có mặt). Đếm đủ rồi kết luận sẽ hiện tại đây.';voteSentence='';return}
+  const pass=yes>present/2;
+  voteSentence='Kết quả biểu quyết bằng hình thức giơ thẻ Đảng về dự thảo nghị quyết chuyên đề quý IV năm 2026: Tổng số đảng viên của chi bộ: '+total+' đồng chí; có mặt: '+present+' đồng chí; vắng mặt: '+(total-present)+' đồng chí. Tán thành: '+yes+' đồng chí ('+pct(yes,present)+'% số có mặt; '+pct(yes,total)+'% tổng số đảng viên). Không tán thành: '+no+' đồng chí ('+pct(no,present)+'% số có mặt). Ý kiến khác: '+other+' đồng chí ('+pct(other,present)+'% số có mặt). Kết luận: '+(pass?'Nghị quyết chuyên đề được thông qua.':'Nghị quyết chuyên đề chưa được thông qua.');
+  box.className='vote-result'+(pass?'':' err');
+  box.innerHTML=(pass?'✅ ':'⚠️ ')+'<b>'+(pass?'Nghị quyết chuyên đề ĐƯỢC THÔNG QUA':'Nghị quyết chuyên đề CHƯA ĐƯỢC THÔNG QUA')+'</b> — Tán thành <b>'+yes+'/'+present+'</b> đảng viên có mặt ('+pct(yes,present)+'%), '+(pass?'đạt trên 1/2 số đảng viên có mặt theo nguyên tắc quá bán.':'chưa đạt trên 1/2 số đảng viên có mặt.')+'<br><span style="font-size:15px">Không tán thành: '+no+' ('+pct(no,present)+'% số có mặt) • Ý kiến khác: '+other+' ('+pct(other,present)+'% số có mặt) • Vắng mặt: '+(total-present)+' đồng chí.</span>';
+}
+function copyVote(){renderVote();if(!voteSentence){alert('Chưa có kết quả hoàn chỉnh để sao chép — hãy nhập đủ số có mặt và đếm đủ số thẻ trước.');return}const done=()=>alert('Đã sao chép kết quả biểu quyết. Ban thư ký dán trực tiếp vào biên bản sinh hoạt chi bộ.');if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(voteSentence).then(done).catch(()=>{fallbackCopy();done()})}else{fallbackCopy();done()}}
+function fallbackCopy(){const ta=document.createElement('textarea');ta.value=voteSentence;document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove()}
+function resetVote(){['vPresent','vYes','vNo','vOther'].forEach(id=>document.getElementById(id).value='');localStorage.removeItem('vl_vote');renderVote();document.getElementById('vPresent').focus()}
+// restore saved vote
+try{const saved=JSON.parse(localStorage.getItem('vl_vote')||'null');if(saved){document.getElementById('vTotal').value=saved.total||39;if(saved.present)document.getElementById('vPresent').value=saved.present;if(saved.yes)document.getElementById('vYes').value=saved.yes;if(saved.no)document.getElementById('vNo').value=saved.no;if(saved.other)document.getElementById('vOther').value=saved.other}}catch(e){}
+vIds.forEach(id=>document.getElementById(id).addEventListener('input',renderVote));
+renderVote();
+</script>
+</body>
+</html>
