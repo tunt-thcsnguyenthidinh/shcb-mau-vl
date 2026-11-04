@@ -11,35 +11,43 @@ a{color:inherit}
 /* TOP STRIP */
 .gov-strip{background:linear-gradient(90deg,var(--dark),var(--red2),var(--dark));color:#ffe9a8;text-align:center;padding:7px 12px;font-family:Arial,sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
 /* HERO */
-.hero{background:radial-gradient(900px 400px at 15% -10%,rgba(245,197,66,.35),transparent 60%),linear-gradient(135deg,#b30f0a,#da251d 45%,#ee3224);color:#fff;padding:26px 18px 0;position:relative;overflow:hidden}
+.hero{background:radial-gradient(900px 400px at 15% -10%,rgba(245,197,66,.35),transparent 60%),linear-gradient(135deg,#b30f0a,#da251d 45%,#ee3224);color:#fff;padding:26px 18px 26px;position:relative;overflow:hidden}
 .hero::after{content:"★";position:absolute;right:-30px;top:-70px;font-size:300px;color:rgba(245,197,66,.12);line-height:1}
 .hero-inner{max-width:1180px;margin:0 auto;position:relative;z-index:1}
-.doc-head{display:flex;justify-content:space-between;gap:20px;border-bottom:2px solid rgba(245,197,66,.7);padding-bottom:14px;font-size:16px}
-.doc-head .left{text-align:center;line-height:1.35}.doc-head .right{text-align:center;line-height:1.35}
-.doc-head b{text-transform:uppercase}.doc-head .party{font-weight:700;letter-spacing:.04em}
+.doc-head{display:flex;justify-content:space-between;gap:20px;max-width:950px;margin:0 auto;width:100%;padding-bottom:14px;font-size:17px}
+.doc-head .left{text-align:center;line-height:1.35}
+.doc-head .right{text-align:center;line-height:1.35}
+.doc-head b{text-transform:uppercase}
+.doc-head .party{font-weight:800;letter-spacing:.02em;white-space:nowrap; display:inline-block; border-bottom:1px solid #fff; padding-bottom:0px; }
 .star-badge{width:86px;height:86px;margin:22px auto 8px;border:3px solid var(--gold2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:46px;color:var(--gold2);background:rgba(0,0,0,.18);box-shadow:0 0 0 6px rgba(245,197,66,.15)}
-.hero h2{text-align:center;margin:4px 0;font-family:Arial,sans-serif;letter-spacing:.22em;font-size:14px;color:#ffe9a8;text-transform:uppercase}
+.hero h2{text-align:center;margin:4px 0;font-family:Arial,sans-serif;letter-spacing:.08em;font-size:21px;color:#ffe9a8;text-transform:uppercase}
 .hero h1{text-align:center;margin:6px auto 8px;max-width:920px;font-size:clamp(26px,4.6vw,44px);line-height:1.2;font-weight:700}
 .hero .subtitle{text-align:center;color:#ffeec2;font-size:clamp(16px,2.4vw,21px);max-width:860px;margin:0 auto}
 .hero .meta{text-align:center;margin:14px auto 0;font-size:16px;color:#fff}
 .hero .meta b{color:var(--gold2)}
 /* STATS */
 .stats{max-width:1180px;margin:20px auto 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:0 0 22px}
+.stats-banner{background:radial-gradient(700px 300px at 15% -10%,rgba(245,197,66,.3),transparent 60%),linear-gradient(135deg,#b30f0a,#da251d 55%,#ee3224);border:1.5px solid var(--gold2);border-radius:16px;padding:16px;box-shadow:var(--shadow);margin-bottom:22px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.stats-banner .stats{max-width:none;margin:0;padding:0}
+body.present .stats-banner{display:none}
 .stat{background:rgba(255,255,255,.97);color:var(--ink);border-radius:14px;padding:14px 10px;text-align:center;border-top:4px solid var(--gold);box-shadow:var(--shadow)}
 .stat .num{font-family:Arial,sans-serif;font-size:30px;font-weight:800;color:var(--red)}
 .stat .lbl{font-family:Arial,sans-serif;font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
 /* TOOLBAR */
-.toolbar{position:sticky;top:0;z-index:50;background:#fffdf6;border-bottom:2px solid var(--gold);box-shadow:0 4px 14px rgba(0,0,0,.06)}
-.toolbar-inner{max-width:1180px;margin:0 auto;display:flex;gap:8px;align-items:center;padding:9px 14px;flex-wrap:wrap}
-.toolbar button,.toolbar input{font-family:Arial,sans-serif;font-size:13.5px;border:1.5px solid var(--red);border-radius:999px;padding:8px 14px;background:#fff;color:var(--red);cursor:pointer;font-weight:700}
-.toolbar button.primary{background:var(--red);color:#fff}
-.toolbar button:hover{background:var(--gold-light)}
-.toolbar button.primary:hover{background:var(--dark)}
-.toolbar input{border-color:#cbbd93;color:var(--ink);font-weight:400;flex:1;min-width:150px;cursor:text}
-.toolbar .spacer{flex:1}
+/* KHOI CHUC NANG trong thanh trai (da bo thanh ngang dau trang) */
+.side-tools{margin-top:15px;border-top:2px solid var(--line);padding-top:13px}
+.side-tools h3{font-family:Arial,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:2px 0 10px}
+.side-tools button{font-family:Arial,sans-serif;font-size:13px;border:1.5px solid var(--red);border-radius:999px;padding:8px 10px;background:#fff;color:var(--red);cursor:pointer;font-weight:700;width:100%;line-height:1.3}
+.side-tools button.primary{background:var(--red);color:#fff;font-size:13.5px;padding:10px}
+.side-tools button:hover{background:var(--gold-light)}
+.side-tools button.primary:hover{background:var(--dark)}
+.side-tools .wide{margin-bottom:8px}
+.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tool-cap{font-family:Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:11px 0 6px}
+.side-tools input{width:100%;font-family:Arial,sans-serif;font-size:13px;border:1.5px solid #cbbd93;border-radius:999px;padding:9px 13px;background:#fff;color:var(--ink)}
 /* LAYOUT */
 .layout{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:22px;padding:22px 14px 10px}
-.toc{position:sticky;top:64px;align-self:start;background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--red);border-radius:12px;padding:14px;box-shadow:var(--shadow)}
+.toc{position:sticky;top:16px;max-height:calc((100vh - 30px)/1.25);overflow-y:auto;align-self:start;background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--red);border-radius:12px;padding:14px;box-shadow:var(--shadow)}
 .toc h3{font-family:Arial,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:2px 0 10px}
 .toc a{display:block;padding:8px 10px;border-radius:8px;text-decoration:none;font-size:15.5px;border-left:3px solid transparent}
 .toc a:hover,.toc a.active{background:#fdf0d3;border-left-color:var(--gold);color:var(--dark);font-weight:700}
@@ -131,7 +139,7 @@ footer{background:linear-gradient(135deg,#b30f0a,#da251d);color:#ffeec2;text-ali
 footer b{color:var(--gold2)}
 /* PRESENT MODE */
 body.present{background:#7d0a06}
-body.present .toolbar,body.present .toc,body.present footer,body.present .gov-strip{display:none}
+body.present .toc,body.present footer,body.present .gov-strip{display:none}
 body.present .layout{grid-template-columns:minmax(0,1fr);max-width:1020px;padding-top:14px}
 body.present section.slide{display:none;min-height:82vh}
 body.present section.slide.current{display:block}
@@ -141,41 +149,24 @@ body.present .present-nav{display:flex;position:fixed;bottom:16px;left:50%;trans
 .present-nav span{color:#fff;font-family:Arial,sans-serif;font-size:13px;align-self:center}
 mark{background:#ffe066;padding:0 2px}
 @media(max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.toc{position:static}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.cards,.cards.c3,.cards.c4{grid-template-columns:minmax(0,1fr)}.timeline{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.timeline::before{display:none}.doc-head{flex-direction:column;gap:4px}.vote{grid-template-columns:1fr}}
-@media print{.toolbar,.toc,.present-nav,.vote,.no-print{display:none!important}body{background:#fff;font-size:14px}.layout{grid-template-columns:minmax(0,1fr)}section.slide{box-shadow:none;break-inside:avoid}.hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
-</style>
+@media print{.toc,.present-nav,.vote,.no-print{display:none!important}body{background:#fff;font-size:14px}.layout{grid-template-columns:minmax(0,1fr)}section.slide{box-shadow:none;break-inside:avoid}.hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+body{ zoom:1.25; } </style> 
 </head>
 <body>
-<div class="gov-strip">Đảng Cộng sản Việt Nam quang vinh muôn năm</div>
-
+<!-- <div class="gov-strip">Đảng Cộng sản Việt Nam quang vinh muôn năm</div> -->
 <header class="hero">
   <div class="hero-inner">
     <div class="doc-head">
-      <div class="left">ĐẢNG ỦY XÃ LONG ĐIỀN<br><b>CHI BỘ TRƯỜNG THCS VĂN LƯƠNG</b><br>*</div>
+      <div class="left">ĐẢNG BỘ XÃ LONG ĐIỀN<br><b>CHI BỘ TRƯỜNG THCS VĂN LƯƠNG</b><br>*</div>
       <div class="right"><span class="party">ĐẢNG CỘNG SẢN VIỆT NAM</span><br><i>Long Điền, ngày 07 tháng 11 năm 2026</i></div>
     </div>
-    <div class="star-badge">★</div>
-    <h2>Báo cáo chuyên đề &nbsp;•&nbsp; Sinh hoạt chi bộ Quý IV — 2026</h2>
-    <h1>Chuyển đổi số và AI an toàn, có trách nhiệm<br>Từ dữ liệu sạch đến lớp học số</h1>
-    <p class="subtitle">Chi bộ Trường THCS Văn Lương — Sinh hoạt chuyên đề mẫu theo Kế hoạch số 193-KH/ĐU ngày 19/10/2026 của Ban Thường vụ Đảng ủy xã</p>
-    <p class="meta">Người báo cáo: <b>đồng chí Phan Văn Trung</b> — Giáo viên Tin học &nbsp;|&nbsp; Thực hiện Kế hoạch số 01-KH/CB ngày 28/01/2026 của Chi bộ</p>
-    <div class="stats">
-      <div class="stat"><div class="num" data-count="39">0</div><div class="lbl">Đảng viên chi bộ</div></div>
-      <div class="stat"><div class="num" data-count="1010">0</div><div class="lbl">Học sinh toàn trường</div></div>
-      <div class="stat"><div class="num" data-count="24">0</div><div class="lbl">Lớp học</div></div>
-      <div class="stat"><div class="num" data-count="55">0</div><div class="lbl">Viên chức</div></div>
-    </div>
+    <!-- <div class="star-badge">★</div> -->
+    <h2>Báo cáo Sinh hoạt Chuyên đề Quý IV năm 2026</h2>
+    <h1>Chuyển đổi số và AI an toàn, có trách nhiệm<br>từ dữ liệu sạch đến lớp học số</h1>
+    <!-- <p class="subtitle">Chi bộ Trường THCS Văn Lương — Sinh hoạt chuyên đề mẫu theo Kế hoạch số 193-KH/ĐU ngày 19/10/2026 của Ban Thường vụ Đảng ủy xã</p> -->
+    <p class="meta">Người báo cáo: <b>đồng chí Phan Văn Trung</b> — Giáo viên Tin học </p>
   </div>
 </header>
-
-<div class="toolbar no-print">
-  <div class="toolbar-inner">
-    <button class="primary" id="btnPresent">▶ Trình chiếu báo cáo</button>
-    <button id="btnFull">⛶ Toàn màn hình</button>
-    <button id="btnMinus">A−</button><button id="btnPlus">A+</button>
-    <button id="btnPrint">🖨 In báo cáo</button>
-    <input id="searchBox" type="search" placeholder="🔎 Tìm trong báo cáo… (vd: học bạ số, 20/11, bảo mật)">
-  </div>
-</div>
 
 <div class="layout">
   <nav class="toc no-print">
@@ -190,14 +181,38 @@ mark{background:#ffe066;padding:0 2px}
     <a href="#thao-luan">Thảo luận — Biểu quyết</a>
     <div class="prog"><i id="progBar"></i></div>
     <div class="prog-lbl" id="progLbl">Đã đọc 0%</div>
+    <div class="side-tools">
+      <h3>Chức năng</h3>
+      <button class="primary wide" id="btnPresent">▶ Trình chiếu báo cáo</button>
+      <div class="tool-grid">
+        <button id="btnFull">⛶ Toàn màn hình</button>
+        <button id="btnPrint">🖨 In báo cáo</button>
+      </div>
+      <div class="tool-cap">Cỡ chữ nội dung</div>
+      <div class="tool-grid">
+        <button id="btnMinus">A− Nhỏ hơn</button>
+        <button id="btnPlus">A+ Lớn hơn</button>
+      </div>
+      <div class="tool-cap">Tìm trong báo cáo</div>
+      <input id="searchBox" type="search" placeholder="🔎 vd: học bạ số, 20/11…">
+    </div>
   </nav>
 
   <main id="main">
+  <!-- TRANG MO MAN: 4 khoi o so lieu -->
+  <div class="stats-banner">
+    <div class="stats">
+      <div class="stat"><div class="lbl">Đảng viên chi bộ</div><div class="num" data-count="39">0</div></div>
+      <div class="stat"><div class="lbl">Học sinh toàn trường</div><div class="num" data-count="1010">0</div></div>
+      <div class="stat"><div class="lbl">tổng số lớp học</div><div class="num" data-count="24">0</div></div>
+      <div class="stat"><div class="lbl">Tổng số viên chức</div><div class="num" data-count="55">0</div></div>
+    </div>
+  </div>
   <!-- MO DAU -->
   <section class="slide" id="mo-dau" data-title="Phần mở đầu">
     <div class="kicker">Phần I • Mở đầu</div>
-    <h2>Mở đầu</h2>
-    <p class="lead">Thực hiện Kế hoạch số 01-KH/CB ngày 28/01/2026 của Chi bộ Trường THCS Văn Lương về tổ chức sinh hoạt chuyên đề quý IV năm 2026; Hướng dẫn số 42-HD/BTCTW ngày 28/10/2025 của Ban Tổ chức Trung ương; Kế hoạch số 193-KH/ĐU ngày 19/10/2026 của Ban Thường vụ Đảng ủy xã về tổ chức sinh hoạt chi bộ thường kỳ và sinh hoạt chuyên đề mẫu.</p>
+    <h2>Mở đầu</h2>                               
+    <p class="lead">Thực hiện Hướng dẫn số 01-HD/TU ngày 04/12/2025 của Thành ủy Thành phố Hồ Chí Minh; Kế hoạch số 193-KH/ĐU ngày 19/10/2026 của Ban Thường vụ Đảng ủy xã về tổ chức sinh hoạt chi bộ thường kỳ và sinh hoạt chuyên đề mẫu; Kế hoạch số 01-KH/CB ngày 28/01/2026 của Chi bộ Trường THCS Văn Lương về tổ chức sinh hoạt chuyên đề quý IV năm 2026 </p>
     <h3>1. Lý do chọn chuyên đề</h3>
     <p>Chuyển đổi số là nhiệm vụ trọng tâm, thường xuyên của năm học 2026–2027, phải được kiểm đếm bằng sản phẩm, kết quả và tác động cụ thể. Dữ liệu là nền tảng của mọi hoạt động quản lý, dạy học, kiểm tra, đánh giá. AI đang thâm nhập trực tiếp vào soạn giảng, chấm chữa, đánh giá và học tập của học sinh — đòi hỏi phải được dùng <b>an toàn, có kiểm soát, có trách nhiệm</b>.</p>
     <div class="callout">⏰ <b>Các mốc đang rất cấp bách:</b> làm sạch dữ liệu <b>90% trước 20/11/2026</b> và <b>98% đến 25/11/2026</b>; dữ liệu Học bạ số lớp 9 trước <b>31/01/2027</b>; số hóa, ký số từ <b>tháng 12/2026</b>.</div>
@@ -319,7 +334,7 @@ mark{background:#ffe066;padding:0 2px}
     <div class="kicker">Phần III • Kết luận</div>
     <h2>Kết luận và đề xuất trình chi bộ thảo luận, quyết định</h2>
     <ul>
-      <li>Đề nghị chi bộ <b>thảo luận, đóng góp ý kiến</b> hoàn thiện dự thảo và <b>thông qua nghị quyết chuyên đề quý IV năm 2026</b>.</li>
+      <li>Đề nghị chi bộ <b>thảo luận, đóng góp ý kiến</b> hoàn thiện dự thảo báo cáo chuyên đề quý IV năm 2026</b>.</li>
       <li>Đề nghị Chi ủy <b>theo dõi, đôn đốc hằng tháng</b> và đánh giá kết quả tại kỳ sinh hoạt tháng 12/2026.</li>
       <li>Đề nghị <b>06 tổ chuyên môn</b> đăng ký tiết dạy ứng dụng AI có kiểm soát trong học kỳ I.</li>
       <li>Đề nghị <b>giáo viên chủ nhiệm</b> rà soát dữ liệu lớp trước mốc <b>20/11/2026</b>.</li>
@@ -379,7 +394,7 @@ mark{background:#ffe066;padding:0 2px}
 </div>
 
 <footer>
-  <b>CHI BỘ TRƯỜNG THCS VĂN LƯƠNG</b> — Đảng ủy xã Long Điền<br>
+  <b>CHI BỘ TRƯỜNG THCS VĂN LƯƠNG</b> — Đảng bộ xã Long Điền<br>
   Báo cáo chuyên đề Quý IV năm 2026: “Chuyển đổi số và AI an toàn, có trách nhiệm — Từ dữ liệu sạch đến lớp học số”<br>
   <span style="font-size:15.5px;opacity:.85">Thiết kế và xây dựng webapp bởi Bí thư Chi bộ Lê Trần Mộng Thành</span>
 </footer>
